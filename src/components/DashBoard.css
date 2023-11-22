@@ -53,3 +53,33 @@
     justify-content: center;
     align-items: center;
 }
+
+@media only screen and (max-width: 992px) {
+    .plancard {
+        flex-direction: column;
+    }
+
+    .addcard{
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .dashboard-head{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .toggle{
+        display: none;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .navmob{
+        display: none;
+    }
+}
+
+.mobContainer{
+    display: none;
+}

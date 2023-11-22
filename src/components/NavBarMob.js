@@ -1,15 +1,10 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
-import React, { useState } from "react";
-import "./Sidebar.css";
-import { GiToggles } from "react-icons/gi";
-const Sidebar = ({mob,setMob}) => {
-    const [dashboard, setDashboard] = useState(true);
-    
-    return (
-        <>
-        
-        <div className={mob ? "sidebarMob":"sidebar"}>
-            <section className="profile">
+import React from 'react'
+import './NavBarMob.css'
+const NavBarMob = () => {
+  return (
+    <div>
+      <section className="profile">
                 <img
                     src="https://www.catholicsingles.com/wp-content/uploads/2020/06/blog-header-3-768x464.png"
                     alt="/profile-image"
@@ -25,7 +20,7 @@ const Sidebar = ({mob,setMob}) => {
 
             <section className="navigation">
                 <div className="navs"  style={{
-                                    backgroundColor: dashboard ? "#8cceed" : "transparent",
+                                    backgroundColor: "#8cceed" ,
                                 }}>
                     <h5 className="nav-item">
                         <sapan>
@@ -101,9 +96,8 @@ const Sidebar = ({mob,setMob}) => {
                     </span>
                 </div>
             </section>
-        </div>
-        </>
-    );
-};
+    </div>
+  )
+}
 
-export default Sidebar;
+export default NavBarMob

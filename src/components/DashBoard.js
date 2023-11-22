@@ -2,8 +2,10 @@ import React from "react";
 import "./DashBoard.css";
 import PlanCard from "./PlanCard";
 import AddCard from "./AddCard";
-
-const DashBoard = () => {
+import { GiToggles } from "react-icons/gi";
+import Sidebar from "./Sidebar";
+import NavBarMob from "./NavBarMob";
+const DashBoard = ({mob,setMob}) => {
     const cardData = [
         {
             title: "Basic",
@@ -53,9 +55,13 @@ const DashBoard = () => {
     ];
     return (
         <div className="dashboard">
-            <div className="container">
+            <div onClick={()=>setMob(!mob)} className="toggle">
+            <GiToggles size={40}/>
+            </div>
+                {mob?<NavBarMob className="navmob"/>:null}
+            <div className={mob ?"mobContainer":"container"}>
                 <div className="dashboard-head">
-                    <div>Choose a plan that's just right for you !</div>
+                    <div>Choose a plan that's just right {mob} for you !</div>
                     <div className="chage-data">
                         <button className="montly"> montly </button>
                         <button className="annualy"> annually </button>
