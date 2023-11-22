@@ -1,0 +1,55 @@
+.dashboard{
+    background-color: white;
+    height: 620px;
+    width: 100%;
+}
+
+.container{
+    padding: 20px;
+}
+
+.dashboard-head{
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    margin: 10px;
+    margin-left: 100px;
+    font-weight: bolder;
+    font-size: large;
+}
+.chage-data{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    border: 2px solid;
+    border-radius: 10px 10px 10px 10px;
+    height: 40px;
+    width: 200px;
+}
+
+.montly{
+    margin: 5px;
+    width: 100px;
+    border: none;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #e3f1fe;
+    cursor: pointer;
+}
+.annualy{
+    margin: 5px;
+    width: 100px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+.plancard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.addcard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,54 @@
+.header {
+    /* position: relative; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    height: 20vh;
+
+}
+.logo{
+    height:00px;
+    /* overflow: none; */
+    width: 250px;
+    border-top: 140px solid white;
+    border-right: 80px solid transparent;
+    /* background: url('../assets/logo.png'); */
+   
+
+
+}
+.img-logo{
+    height: 500px;
+}
+.selector{
+    display:flex;
+    margin-right: 14px;
+    padding-left: 50px;
+    padding-right: 100px;
+    gap: 10px;
+}
+.selector-btn{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 40px;
+    width: 240px;
+    border-radius: 10px;
+    border: none;
+}
+.selector-logo{
+    height: 30px;
+    width:  30px;
+    border-radius: 50%;
+
+}
+select{
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+
+}
